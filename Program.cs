@@ -25,8 +25,8 @@ builder.Services.AddCors(options =>
       .AllowAnyHeader());
 });
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8081";
-builder.WebHost.UseUrls($"http://*:{port}");
+//var port = Environment.GetEnvironmentVariable("PORT") ?? "8081";
+//builder.WebHost.UseUrls($"http://localhost:{port}");
 
 var app = builder.Build();
 
